@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<form>
+  <div class="form-group">
+  <label for="userdName"> UserName:</label>
+  <input required minlength="5"  ngModel name="userName" #name="ngModel" id="userName" (change)="LogChange(name)" 
+  type="text" class="form-control">
+    <div class="alert alert-danger" *ngIf="!name.valid">UserName is Compulssory.</div>
+</div>
+
+<div class="form-group" >
+  <label for="password">Password: </label>
+  <input required minlength="7"  ngModel name="password" #name="ngModel" id="password" (change)="LogChange(name)"
+   type="text" class="form-control">
+</div><br>
+
+<div class="form-group">
+  <label for="CollegeName">CollegeName</label>
+  <input required   ngModel name="collegeName" #name="ngModel" id="collegeName" (change)="LogChange(name)" type="text" class="form-control">
+  <div class="alert alert-danger" *ngIf="!name.valid">College Name is Compulssory.</div>
+</div><br>
+
+
+<div>
+  <button class="btn btn-primary">Submit</button>
+</div>
+</form>
+

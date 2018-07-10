@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    <h1>Student Form</h1>
+  </h1>
+
+
+<div class="form-group">
+  <label for="user">Username: </label>
+  <input type="text" #username class="form-control" id="usr" size="35">
+</div><br><br>
+
+<div class="form-group">
+<label for="Comment">Address: </label>
+<textarea class="form-control"  #address rows="5" id="comment"></textarea>
+</div><br>
+
+<div class="dadio">
+<label> <input type="radio" #male name="gender" >Male</label>
+<label><input type="radio" #female name="gender">Female</label>
+<label><input type="radio" #other name="gender">Other</label>
+</div><br>
+
+<div class="form-group">
+ <label for="MobileNo">Mobile No: </label>
+  <input type="text" #mobileno class="form-control" id="MobNo" size="35">
+</div><br>
+
+<div class="form-group">
+  <label for="collegeo">College Name: </label>
+   <input type="text" #collegenm  class="form-control" id="college" size="35">
+ </div><br>
+
+ <div class="form-group">
+    <label for="email">Email: </label>
+     <input type="text" #email class="form-control" id="email" size="35" required>
+   </div><br>
+
+   <div class="form-group">
+      <label for="Batch">Batch Name: </label>
+       <input type="text" #batch class="form-control" id="Batch" size="35">
+     </div><br>
+     <button (click)="SubmitButton(username.value,address.value,male.value,female.value,other.value,mobileno.value,collegenm.value,email.value,batch.value)" class="btn btn-default">Submit</button>
+
+    </div>
